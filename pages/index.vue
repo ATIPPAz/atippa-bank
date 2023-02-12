@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col class="header">
         <v-card class="">
-          <div class="text-overline test">ธุระกรรม</div>
+          <div class="text-overline test">ธุระกรรม{{ data.a }}</div>
           <v-btn
             style="width: 100%"
             outlined
@@ -65,6 +65,7 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      data: [],
       headers: [
         {
           text: 'Dessert (100g serving)',
@@ -164,6 +165,12 @@ export default {
   },
   mounted() {
     this.$vuetify.theme.dark = true
+    fetch('http://localhost:5000/')
+      .then((response) => response.json())
+      .then((data) => {
+        this.data = data
+        console.log(data)
+      })
   },
 }
 </script>
