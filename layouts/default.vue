@@ -1,21 +1,14 @@
 <template>
-  <v-app  style="background-color: antiquewhite;">
-  
-   
-    ATIPPA BANK
- 
-
-  <Nuxt/>
-
-  
-</v-app>
- 
+  <v-app style="background-color: whitesmoke">
+    <Layout-Header />
+    <Nuxt />
+  </v-app>
 </template>
 
 <script>
 export default {
   name: 'DefaultLayout',
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
@@ -24,19 +17,19 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Welcome',
-          to: '/'
+          to: '/',
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
-          to: '/inspire'
-        }
+          to: '/inspire',
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vuetify.js',
     }
-  }
+  },
 }
 </script>
