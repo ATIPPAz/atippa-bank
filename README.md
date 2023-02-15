@@ -1,5 +1,6 @@
 # atippa-bank
-
+###Design Prototype 
+https://www.figma.com/file/Ou3rYkFeaNMxwMcfYHMnsZ/ATIPPA-BANK?node-id=0%3A1&t=HE4XJ1TXPy4mRPQG-1
 ## Build Setup
 
 ```bash
